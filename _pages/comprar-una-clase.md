@@ -1,9 +1,12 @@
 ---
 layout: splash
 title: "Comprar una clase"
-excerpt: "Comprar una clase."
+excerpt: "Comprar una clase"
 permalink: /comprar-una-clase
+toc: true
 ---
+
+# Comprar una clase
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
