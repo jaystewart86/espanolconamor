@@ -14,5 +14,5 @@ main:
     url: /comprar-una-clase
   - title: "Comprar un paquete"
     url: /comprar-un-paquete
-  - title: "Reservar"
-    url: /reservar
+  - title: 'Acceder'
+    url: /acceder

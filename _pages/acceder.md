@@ -1,11 +1,21 @@
 ---
 layout: splash
-title: "Reservar"
-excerpt: "Reservar."
-permalink: /reservar
+excerpt: "Acceder."
+permalink: /acceder
 ---
 
-# Reservar
+<br>
+<h1>Reserva una clase de tu paquete</h1>
+<p>Esto es para estudiantes que han comprado un paquete. Reserva tus clases aquí.</p>
+<b>Asegúrate de utilizar el mismo correo electrónico que ingresaste al comprar el paquete.</b>
+
+<script>
+  var password = prompt("Enter the password:");
+
+  // if (password == null && password !== "ilovespanish") {
+  //   window.location.href = "/";
+  // }
+</script>
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
