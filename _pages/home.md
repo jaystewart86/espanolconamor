@@ -4,7 +4,7 @@ permalink: /
 hidden: true
 header:
   overlay_color: "#5e616c"
-  overlay_image: /assets/images/mm-home-page-feature.jpg
+  overlay_image: /assets/images/eca/banner1.jpg
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
@@ -13,6 +13,18 @@ excerpt: >
   <br/>
   Conviértete en un Experto del Idioma con Nuestro Enfoque Cálido y Personalizado en Cada Llamada.
 feature_row:
+  - image_path: /assets/images/eca/ana.jpeg
+    alt: "¡Hola! Soy Ana Laura"
+    title: "¡Hola! Soy Ana Laura"
+    excerpt: "Profesora de español desde hace tres años. Me considero muy sociable y disfruto mucho el contacto con la gente, por eso me dedico a enseñar a hablar español."
+  - image_path: /assets/images/eca/happy.jpeg
+    alt: "No soy partidaria"
+    title: "No soy partidaria"
+    excerpt: "De tener muchos alumnos a la vez. Mi razón es simple: cada persona es única, al igual que sus objetivos. Si buscas un contenido genérico para todos, tal vez las academias de tu zona sean más adecuadas."
+  - image_path: /assets/images/eca/arms.jpeg
+    alt: "Es importante que conectemos"
+    title: "Es importante que conectemos"
+    excerpt: "De verdad, ya que hablaremos mucho en las clases. Mi enfoque es ayudarte a expresar tu personalidad en español, y para eso, necesito que estés dispuesto(a) a hacerlo conmigo."
   - image_path: /assets/images/eca/rian.jpg
     # alt: "customizable"
     # title: ""
@@ -35,20 +47,6 @@ feature_row:
     # btn_class: "btn--primary"
     # btn_label: "Reservar"      
 ---
-
-<p>
-¡Hola! Soy Ana Laura, profesora de español desde hace tres años. Me considero muy sociable y disfruto mucho el contacto con la gente, por eso me dedico a enseñar a hablar español.
-</p>
-
-<p>
-No soy partidaria de tener muchos alumnos a la vez. Mi razón es simple: cada persona es única, al igual que sus objetivos. Si buscas un contenido genérico para todos, tal vez las academias de tu zona sean más adecuadas.
-</p>
-
-<p>
-Es importante que conectemos de verdad, ya que hablaremos mucho en las clases. Mi enfoque es ayudarte a expresar tu personalidad en español, y para eso, necesito que estés dispuesto(a) a hacerlo conmigo.
-</p>
-
-
 
 {% include feature_row %}
 
