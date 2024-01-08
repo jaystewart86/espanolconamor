@@ -8,6 +8,7 @@ header:
   # actions:
   #   - label: "<i class='fas fa-download'></i> Install now"
   #     url: "/docs/quick-start-guide/"
+title: "Online Spanish classes!"
 excerpt: >
   Descubre el Español con Alegría: Aprende con Amor en Nuestras Divertidas Clases por Video Llamada.
   <br/>
