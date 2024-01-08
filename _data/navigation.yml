@@ -16,3 +16,5 @@ main:
     url: /comprar-un-paquete
   - title: 'Acceder'
     url: /acceder
+  - title: "Terms &amp; Privacy Policy"
+    url: /terms/
