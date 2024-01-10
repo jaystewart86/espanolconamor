@@ -4,8 +4,8 @@ excerpt: "Acceder."
 permalink: /acceder
 ---
 
-<br>
-<h1>Reserva una clase de tu paquete</h1>
+## Reserva una clase de tu paquete
+
 <p>Esto es para estudiantes que han comprado un paquete. Reserva tus clases aquí.</p>
 <b>Asegúrate de utilizar el mismo correo electrónico que ingresaste al comprar el paquete.</b>
 
