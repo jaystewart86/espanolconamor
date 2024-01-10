@@ -5,7 +5,7 @@ excerpt: "Comprar un paquete."
 permalink: /comprar-un-paquete
 ---
 
-# Comprar un paquete
+## Comprar un paquete
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
