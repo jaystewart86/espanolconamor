@@ -5,7 +5,9 @@ excerpt: "Comprar un paquete."
 permalink: /comprar-un-paquete
 ---
 
-# Comprar un paquete
+## Comprar un paquete
+
+Incluye 10 clases. Reserva la primera clase y paga el paquete. Reserva futuras clases aquí: <a href="https://espanolconamor.com/estudiantes">https://espanolconamor.com/estudiantes</a>.
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>

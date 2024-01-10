@@ -14,7 +14,5 @@ main:
     url: /comprar-una-clase
   - title: "Comprar un paquete"
     url: /comprar-un-paquete
-  - title: 'Acceder'
-    url: /acceder
-  - title: "Terms &amp; Privacy Policy"
+  - title: "Terms"
     url: /terms/

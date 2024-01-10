@@ -6,52 +6,62 @@ last_modified_at: 2017-10-20T12:42:38-04:00
 toc: true
 ---
 
-## Privacy Policy
+## Terms and Conditions for Online Spanish Lessons
 
-The privacy of my visitors is extremely important. This Privacy Policy outlines the types of personal information that is received and collected and how it is used.
+## 1. Lesson Booking
 
-First and foremost, I will never share your email address or any other personal information to anyone without your direct consent.
+1.1 Lessons must be booked in advance through our online booking system.
 
-### Log Files
+1.2 Lesson availability is subject to the schedule of the instructor.
 
-Like many other websites, this site uses log files to help learn about when, from where, and how often traffic flows to this site. The information in these log files include:
+1.3 Lessons are booked on a first-come, first-served basis.
 
-* Internet Protocol addresses (IP)
-* Types of browser
-* Internet Service Provider (ISP)
-* Date and time stamp
-* Referring and exit pages
-* Number of clicks
+## 2. Cancellation Policy
 
-All of this information is not linked to anything that is personally identifiable.
+2.1 **Free Cancellation**: Students are entitled to a free cancellation if the cancellation is made at least 24 hours before the scheduled lesson.
 
-### Cookies and Web Beacons
+2.2 **Late Cancellation**: Cancellations made within 24 hours of the scheduled lesson will not be eligible for a refund.
 
-When you visit this site "convenience" cookies are stored on your computer when you submit a comment to help you log in faster to [Disqus](http://disqus.com) the next time you leave a comment.
+2.3 **No-Show**: If a student does not attend the lesson without prior notice, the full lesson fee will be charged.
 
-Third-party advertisers may also place and read cookies on your browser and/or use web beacons to collect information. This site has no access or control over these cookies. You should review the respective privacy policies on any and all third-party ad servers for more information regarding their practices and how to opt-out.
+## 3. Rescheduling
 
-If you wish to disable cookies, you may do so through your web browser options. Instructions for doing so can be found on the specific web browsers' websites.
+3.1 Lesson rescheduling is allowed, provided that the request is made at least 24 hours before the scheduled lesson.
 
-#### Google Analytics
+3.2 Rescheduling requests made within 24 hours of the scheduled lesson will be subject to instructor availability.
 
-Google Analytics is a web analytics tool I use to help understand how visitors engage with this website. It reports website trends using cookies and web beacons without identifying individual visitors. You can read [Google Analytics Privacy Policy](http://www.google.com/analytics/learn/privacy.html).
+## 4. Lesson Duration
 
-#### Google Adsense
+4.1 Each lesson has a specified duration as agreed upon during the booking process.
 
-Google Adsense, a third party affiliate marketing network, uses cookies to help make sure I get a commission when you buy a product after clicking on a link or ad banner that takes you to the site of one of their merchants. You can read [Google Adsense Privacy Policy](http://support.google.com/adsense/bin/answer.py?hl=en&answer=48182).
+4.2 Students are responsible for being punctual, and late arrivals will not result in an extension of the lesson time.
 
-## Disclosure Policy
+## 5. Technical Requirements
 
-I make money on this website through affiliate programs. If you click an affiliate link or ad banner and buy the product, you help support this website because I'll get a percentage of that sale.
+5.1 Students must ensure they have a stable internet connection and necessary equipment (computer, webcam, microphone, etc.) for the online lessons.
 
-Currently I'm an affiliate for Amazon and Google Adsense.
+5.2 Technical issues on the student's end leading to disruptions in the lesson will not result in a refund.
 
-What this means for you:
+## 6. Payment
 
-* I became an affiliate to earn revenue towards the costs of running and maintaining this website. Where I have direct control over which ads are served on this website I offer only products that are directly related to the topic of this website and products that a reader/subscriber would have a genuine interest in or need of.
-* I do not and will not recommend a product just for the sake of making money.
-* I do not let the compensation I receive influence the content, topics, posts, or opinions expressed on this website.
-* I respect and value my readers too much to write anything other than my own genuine and objective opinions and advice.
+6.1 Lesson fees must be paid in advance through our secure online payment system.
 
-Just like this website, my Disclosure Policy is a work in progress. As the revenue streams evolve, so will this page.
+6.2 Lesson fees are non-refundable, except as specified in the cancellation policy.
+
+## 7. Instructor Changes
+
+7.1 In the event that an instructor is unable to conduct a scheduled lesson, efforts will be made to provide a substitute instructor or reschedule the lesson.
+
+## 8. Code of Conduct
+
+8.1 Students are expected to behave respectfully and professionally during lessons.
+
+8.2 Any form of inappropriate behavior, including but not limited to harassment, will result in the immediate termination of lessons without a refund.
+
+## 9. Changes to Terms and Conditions
+
+9.1 These terms and conditions are subject to change. Any updates will be communicated to students in a timely manner.
+
+By booking a lesson, you acknowledge that you have read, understood, and agree to abide by these terms and conditions.
+
+*Last Updated: January 10, 2024*
