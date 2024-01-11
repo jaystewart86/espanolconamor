@@ -80,9 +80,3 @@ Cal("init", "1-clase", {origin:"https://cal.com"});
   Cal.ns["1-clase"]("ui", {"styles":{"branding":{"brandColor":"#000000"}},"hideEventTypeDetails":false,"layout":"week_view"});
   </script>
   <!-- Cal floating-popup embed code ends -->
-
-
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-<a href="https://api.whatsapp.com/send?phone=522282770952&text=Hello!%20I%20am%20interested%20in%20taking%20Spanish%20classes%20with%20you!" class="float" target="_blank">
-<i class="fa fa-whatsapp my-float"></i>
-</a>
