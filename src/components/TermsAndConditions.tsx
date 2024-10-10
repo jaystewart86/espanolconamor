@@ -2,7 +2,7 @@ import React from "react";
 
 const TermsAndConditions: React.FC = () => {
   return (
-    <section className="max-w-4xl mx-auto p-4 bg-white dark:bg-gray-800 text-gray-900 dark:text-gray-100">
+    <div className="p-6 text-gray-200 bg-gray-900">
       <h2
       id="terms-and-conditions-for-online-spanish-lessons"
       className="text-3xl font-semibold mb-6"
@@ -212,7 +212,7 @@ const TermsAndConditions: React.FC = () => {
       <p className="mt-4">
       <em>Last Updated: January 10, 2024</em>
       </p>
-    </section>
+    </div>
   );
 };
 
