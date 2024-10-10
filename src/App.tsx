@@ -1,4 +1,4 @@
-import { Authenticator } from '@aws-amplify/ui-react';
+import { Authenticator } from "@aws-amplify/ui-react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "./App.css";
 import Header from "./components/Header";
@@ -15,22 +15,27 @@ import About from "./components/About";
 function App() {
   return (
     <Router>
-      <Header />
-      <Routes>
+      <div className="bg-gray-100 dark:bg-gray-800">
+        <Header />
+        <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
-          <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+          <Route
+            path="/terms-and-conditions"
+            element={<TermsAndConditions />}
+          />
         </Routes>
-      <Authenticator>
-        <Routes>
-          <Route path="/availability" element={<Availability />} />
-          <Route path="/appointments" element={<Appointments />} />
-        </Routes>
-      </Authenticator>
-      <Footer />
+        <Authenticator>
+          <Routes>
+            <Route path="/availability" element={<Availability />} />
+            <Route path="/appointments" element={<Appointments />} />
+          </Routes>
+        </Authenticator>
+        <Footer />
+      </div>
     </Router>
   );
 }

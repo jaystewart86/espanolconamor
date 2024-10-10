@@ -1,7 +1,7 @@
 const Home: React.FC = () => {
   return (
     <>
-      <div className="about-container p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+      <div className="about-container p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md text-center">
         <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white dark:text-gray-100">
           ¡Clases de Español en Línea!
         </h2>
@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         </p>
       </div>
 
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 p-6 bg-gray-900 dark:bg-gray-700">
         <div className="text-center">
           <img
             src="/images/ana.jpeg"
@@ -85,7 +85,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-6 text-gray-300 dark:text-gray-400 max-w-4xl mx-auto">
+      <div className="p-6 text-gray-300 dark:text-gray-400 dark:bg-gray-700 text-center">
         <p className="mb-4">
           Si deseas aprovechar al máximo tus viajes a España o Latinoamérica, o
           simplemente disfrutas aprender este maravilloso idioma en tu tiempo

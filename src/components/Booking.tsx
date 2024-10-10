@@ -1,4 +1,8 @@
 import React, { useState } from "react";
+import { generateClient } from 'aws-amplify/data';
+import { type Schema } from '../amplify/data/resource';
+
+const client = generateClient<Schema>();
 
 const Booking: React.FC = () => {
   const times = ["8:00am", "9:00am", "10:00am", "11:00am", "12:00pm", "1:00pm"];
@@ -6,6 +10,9 @@ const Booking: React.FC = () => {
   const [currentWeek, setCurrentWeek] = useState(0);
   const [selectedDate, setSelectedDate] = useState("");
   const [selectedTime, setSelectedTime] = useState("");
+  const [whatsapp, setWhatsapp] = useState("");
+  const [email, setEmail] = useState("");
+  const [name, setName] = useState("");
 
   const getWeekDays = (weekOffset: number) => {
     const today = new Date();
@@ -61,6 +68,36 @@ const Booking: React.FC = () => {
       }
       const time24 = `${hour24.toString().padStart(2, "0")}:${minute}`;
       setSelectedTime(time24);
+    }
+  };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+    e.preventDefault();
+    const appointment = {
+      whatsapp,
+      email,
+      name,
+      date: selectedDate,
+      time: selectedTime,
+    };
+
+    try {
+      const { errors, data: newAppointment } = await client.models.Appointment.create(appointment);
+
+      if (errors) {
+      console.error(errors);
+      } else {
+      alert("Appointment booked successfully!");
+      // Reset form fields
+      setWhatsapp("");
+      setEmail("");
+      setName("");
+      setSelectedDate("");
+      setSelectedTime("");
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Failed to book appointment.");
     }
   };
 
@@ -136,7 +173,10 @@ const Booking: React.FC = () => {
           </div>
         </div>
         <div className="flex-1">
-          <form className="bg-gray-800 dark:bg-gray-700 p-6 rounded-lg shadow-md">
+          <form
+            className="bg-gray-800 dark:bg-gray-700 p-6 rounded-lg shadow-md"
+            onSubmit={handleSubmit}
+          >
             <div className="mb-4">
               <label
                 htmlFor="whatsapp"
@@ -147,6 +187,8 @@ const Booking: React.FC = () => {
               <input
                 type="tel"
                 id="whatsapp"
+                value={whatsapp}
+                onChange={(e) => setWhatsapp(e.target.value)}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 dark:bg-gray-600 text-gray-300 dark:text-gray-400"
               />
             </div>
@@ -160,6 +202,8 @@ const Booking: React.FC = () => {
               <input
                 type="email"
                 id="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 dark:bg-gray-600 text-gray-300 dark:text-gray-400"
               />
             </div>
@@ -173,6 +217,8 @@ const Booking: React.FC = () => {
               <input
                 type="text"
                 id="name"
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 className="w-full px-4 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-600 bg-gray-700 dark:bg-gray-600 text-gray-300 dark:text-gray-400"
               />
             </div>

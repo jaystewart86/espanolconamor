@@ -1,6 +1,14 @@
-import React, { useState } from "react";
+import { generateClient } from "aws-amplify/api";
+import React, { useEffect, useState } from "react";
+import { Schema } from "../../amplify/data/resource";
+
+const client = generateClient<Schema>();
 
 const Appointments: React.FC = () => {
+
+  const [appointments, setAppointments] = useState<Schema['Appointment'][]>([]);
+
+
   const times = [
     "8:00am",
     "9:00am",
@@ -10,14 +18,20 @@ const Appointments: React.FC = () => {
     "4:00pm",
     "5:00pm",
   ];
-  const appointments = [
-    {
-      date: "2024-10-11",
-      time: "8:00am",
-      name: "John Doe",
-      email: "john@google.com",
-    },
-  ];
+
+
+  useEffect(() => {
+    const fetchAppointments = async () => {
+      try {
+        const { data: appointments } = await client.models.Appointment.list();
+        setAppointments(appointments);
+      } catch (error) {
+        console.error("Error fetching appointments:", error);
+      }
+    };
+
+    fetchAppointments();
+  }, []);
 
   const [currentWeek, setCurrentWeek] = useState(0);
   const [selectedDate, setSelectedDate] = useState("");

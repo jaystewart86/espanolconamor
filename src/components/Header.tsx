@@ -39,11 +39,8 @@ const Header: React.FC = () => {
         </ul>
         </nav>
         <div className="flex items-center space-x-4">
-        <a href="#signin" className="text-lg font-semibold hover:text-gray-300 dark:text-white dark:hover:text-gray-400">
-          Sign In
-        </a>
-        <a href="#signup" className="px-4 py-2 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-200 dark:bg-gray-700 dark:text-blue-400 dark:hover:bg-gray-600">
-          Sign Up
+        <a href="/sign-out" className="px-4 py-2 bg-white text-blue-600 rounded-lg font-semibold hover:bg-gray-200 dark:bg-gray-700 dark:text-blue-400 dark:hover:bg-gray-600">
+          Sign Out
         </a>
         </div>
       </div>

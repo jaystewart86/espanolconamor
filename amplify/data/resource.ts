@@ -13,6 +13,16 @@ const schema = a.schema({
       value: a.string(),
     })
     .authorization((allow) => [allow.publicApiKey()]),
+  Appointment: a
+    .model({
+      date: a.string(),
+      time: a.string(),
+      type: a.string(),
+      email: a.string(),
+      whatsapp: a.string(),
+      name: a.string(),
+    })
+    .authorization((allow) => [allow.publicApiKey()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
