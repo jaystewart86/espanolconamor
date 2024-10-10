@@ -12,7 +12,7 @@ const schema = a.schema({
       key: a.string(),
       value: a.string(),
     })
-    .authorization((allow) => [allow.publicApiKey()]),
+    .authorization((allow) => [allow.owner()]),
   Appointment: a
     .model({
       date: a.string(),
@@ -22,7 +22,7 @@ const schema = a.schema({
       whatsapp: a.string(),
       name: a.string(),
     })
-    .authorization((allow) => [allow.publicApiKey()]),
+    .authorization((allow) => [allow.owner()]),
 });
 
 export type Schema = ClientSchema<typeof schema>;
