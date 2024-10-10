@@ -47,15 +47,18 @@ const Booking: React.FC = () => {
 
   const handleTimeSlotClick = (date: string, time: string) => {
       setSelectedDate(date);
-      const [hour, minute, period] = time.match(/(\d+):(\d+)([ap]m)/i).slice(1);
-      let hour24 = parseInt(hour, 10);
-      if (period.toLowerCase() === "pm" && hour24 !== 12) {
-          hour24 += 12;
-      } else if (period.toLowerCase() === "am" && hour24 === 12) {
-          hour24 = 0;
+      const match = time.match(/(\d+):(\d+)([ap]m)/i);
+      if (match) {
+        const [hour, minute, period] = match.slice(1);
+        let hour24 = parseInt(hour, 10);
+        if (period.toLowerCase() === "pm" && hour24 !== 12) {
+            hour24 += 12;
+        } else if (period.toLowerCase() === "am" && hour24 === 12) {
+            hour24 = 0;
+        }
+        const time24 = `${hour24.toString().padStart(2, "0")}:${minute}`;
+        setSelectedTime(time24);
       }
-      const time24 = `${hour24.toString().padStart(2, "0")}:${minute}`;
-      setSelectedTime(time24);
   };
 
   const days = getWeekDays(currentWeek);
