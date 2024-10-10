@@ -4,6 +4,7 @@ import './App.css';
 import Header from './components/Header';
 import Footer from './components/Footer';
 import TermsAndConditions from './components/TermsAndConditions';
+import Booking from './components/Booking';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/terms-and-conditions" element={<TermsAndConditions />} />
+        <Route path="/booking" element={<Booking />} />
         {/* Add other routes here */}
       </Routes>
       <Footer />
@@ -22,30 +24,30 @@ function App() {
 const Home: React.FC = () => {
   return (
     <>
-      <div className="bg-yellow-300 text-gray-800 py-4 px-6 text-center">
-        <h2 className="text-3xl font-bold mb-2">Online Spanish lessons!</h2>
-        <p className="text-lg mb-2">Descubre el Español con Alegría: Aprende con Amor en Nuestras Divertidas Clases por Video Llamada.</p>
-        <p className="text-lg">Conviértete en un Experto del Idioma con Nuestro Enfoque Cálido y Personalizado en Cada Llamada.</p>
+      <div className="bg-gradient-to-r from-yellow-400 via-red-400 to-pink-400 text-white py-8 px-10 text-center rounded-lg shadow-lg">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">¡Clases de Español en Línea!</h2>
+        <p className="text-xl md:text-2xl mb-4">Descubre el Español con Alegría: Aprende con Amor en Nuestras Divertidas Clases por Video Llamada.</p>
+        <p className="text-xl md:text-2xl">Conviértete en un Experto del Idioma con Nuestro Enfoque Cálido y Personalizado en Cada Llamada.</p>
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 p-6">
         <div className="text-center">
-          <img src="/images/ana.jpeg" alt="Ana" className="w-full h-auto" />
+          <img src="/images/ana.jpeg" alt="Ana" className="w-48 h-48 mx-auto" />
           <h2 className="text-2xl font-bold mt-4">¡Hola! Soy Ana Laura</h2>
           <p className="text-lg mt-2">Profesora de español desde hace tres años. Me considero muy sociable y disfruto mucho el contacto con la gente, por eso me dedico a enseñar a hablar español.</p>
         </div>
         <div className="text-center">
-          <img src="/images/arms.jpeg" alt="Arms" className="w-full h-auto" />
+          <img src="/images/arms.jpeg" alt="Arms" className="w-48 h-48 mx-auto" />
           <h2 className="text-2xl font-bold mt-4">Es importante que conectemos</h2>
           <p className="text-lg mt-2">De verdad, ya que hablaremos mucho en las clases. Mi enfoque es ayudarte a expresar tu personalidad en español, y para eso, necesito que estés dispuesto(a) a hacerlo conmigo.</p>
         </div>
         <div className="text-center">
-          <img src="/images/happy.jpeg" alt="Happy" className="w-full h-auto" />
+          <img src="/images/happy.jpeg" alt="Happy" className="w-48 h-48 mx-auto" />
           <h2 className="text-2xl font-bold mt-4">No soy partidaria</h2>
           <p className="text-lg mt-2">De tener muchos alumnos a la vez. Mi razón es simple: cada persona es única, al igual que sus objetivos. Si buscas un contenido genérico para todos, tal vez las academias de tu zona sean más adecuadas.</p>
         </div>
-        <img src="/images/man.jpg" alt="Man" className="w-full h-auto" />
-        <img src="/images/logo.png" alt="Logo" className="w-full h-auto" />
-        <img src="/images/rian.jpg" alt="Rian" className="w-full h-auto" />
+        <img src="/images/man.jpg" alt="Man" className="w-48 h-48 mx-auto" />
+        <img src="/images/logo.png" alt="Logo" className="w-48 h-48 mx-auto" />
+        <img src="/images/rian.jpg" alt="Rian" className="w-48 h-48 mx-auto" />
       </div>
       <div className="p-6 text-gray-800">
         <p className="mb-4">Si deseas aprovechar al máximo tus viajes a España o Latinoamérica, o simplemente disfrutas aprender este maravilloso idioma en tu tiempo libre, estás en el lugar indicado.</p>
