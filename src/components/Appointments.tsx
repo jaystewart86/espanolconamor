@@ -1,13 +1,20 @@
-import { generateClient } from "aws-amplify/api";
 import React, { useEffect, useState } from "react";
+import { generateClient } from 'aws-amplify/data';
 import { Schema } from "../../amplify/data/resource";
 
 const client = generateClient<Schema>();
 
+interface Appointment {
+  date: string;
+  time: string;
+  type: string;
+  email: string;
+  whatsapp: string;
+  name: string;
+}
+
 const Appointments: React.FC = () => {
-
-  const [appointments, setAppointments] = useState<Schema['Appointment'][]>([]);
-
+  const [appointments, setAppointments] = useState<Appointment[]>([]);
 
   const times = [
     "8:00am",
@@ -19,12 +26,19 @@ const Appointments: React.FC = () => {
     "5:00pm",
   ];
 
-
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
         const { data: appointments } = await client.models.Appointment.list();
-        setAppointments(appointments);
+        const mappedAppointments = appointments.map((appointment) => ({
+          date: appointment.date ?? "",
+          time: appointment.time ?? "",
+          type: appointment.type ?? "",
+          email: appointment.email ?? "",
+          whatsapp: appointment.whatsapp ?? "",
+          name: appointment.name ?? "",
+        }));
+        setAppointments(mappedAppointments);
       } catch (error) {
         console.error("Error fetching appointments:", error);
       }
@@ -186,28 +200,34 @@ const Appointments: React.FC = () => {
           </div>
           <div className="mb-6">
             <ul className="space-y-4">
-              {appointments.map((appointment, index) => (
+                {appointments.map((appointment, index) => (
                 <li
                   key={index}
                   className="p-4 bg-gray-800 rounded-lg shadow-md flex justify-between items-center hover:bg-gray-700"
                 >
                   <div>
-                    <div className="text-lg font-bold">{appointment.name}</div>
-                    <div className="text-sm text-gray-400">
-                      {appointment.email}
-                    </div>
-                    <div className="text-sm text-gray-400">
-                      {new Date(appointment.date).toLocaleDateString("en-US", {
-                        weekday: "long",
-                        year: "numeric",
-                        month: "long",
-                        day: "numeric",
-                      })}{" "}
-                      at {appointment.time}
-                    </div>
+                  <div className="text-lg font-bold">{appointment.name}</div>
+                  <div className="text-sm text-gray-400">
+                    {appointment.email}
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    {appointment.whatsapp}
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    {new Date(appointment.date).toLocaleDateString("en-US", {
+                    weekday: "long",
+                    year: "numeric",
+                    month: "long",
+                    day: "numeric",
+                    })}{" "}
+                    at {appointment.time}
+                  </div>
+                  <div className="text-sm text-gray-400">
+                    Type: {appointment.type}
+                  </div>
                   </div>
                 </li>
-              ))}
+                ))}
             </ul>
           </div>
         </div>

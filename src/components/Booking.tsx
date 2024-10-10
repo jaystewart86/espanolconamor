@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { generateClient } from 'aws-amplify/data';
-import { type Schema } from '../amplify/data/resource';
+import { Schema } from "../../amplify/data/resource";
 
 const client = generateClient<Schema>();
 
@@ -82,7 +82,7 @@ const Booking: React.FC = () => {
     };
 
     try {
-      const { errors, data: newAppointment } = await client.models.Appointment.create(appointment);
+      const { errors } = await client.models.Appointment.create(appointment);
 
       if (errors) {
       console.error(errors);
