@@ -133,23 +133,23 @@ const Availability: React.FC = () => {
 
   return (
     <div className="container mx-auto p-4">
-      <h1 className="text-3xl font-bold text-gray-800 mb-4">
+      <h1 className="text-3xl font-bold text-gray-800 dark:text-gray-200 mb-4">
         Set Availability
       </h1>
       <form
         onSubmit={handleSubmit}
-        className="p-6 bg-white shadow-md rounded-lg"
+        className="p-6 bg-white dark:bg-gray-800 shadow-md rounded-lg"
       >
         {daysOfWeek.map((day) => (
           <div key={day} className="mb-6">
-            <label className="block text-gray-800 font-semibold mb-2">
+            <label className="block text-gray-800 dark:text-gray-200 font-semibold mb-2">
               {day}
             </label>
             <div className="flex space-x-4 mb-4">
               <select
                 value={availability[day].start}
                 onChange={(e) => handleChange(day, "start", e.target.value)}
-                className="border border-gray-300 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 dark:border-gray-600 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200"
               >
                 <option value="" disabled>
                   Select start time
@@ -163,7 +163,7 @@ const Availability: React.FC = () => {
               <select
                 value={availability[day].end}
                 onChange={(e) => handleChange(day, "end", e.target.value)}
-                className="border border-gray-300 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 dark:border-gray-600 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200"
               >
                 <option value="" disabled>
                   Select end time
@@ -179,7 +179,7 @@ const Availability: React.FC = () => {
               <select
                 value={availability[day].start2}
                 onChange={(e) => handleChange(day, "start2", e.target.value)}
-                className="border border-gray-300 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 dark:border-gray-600 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200"
               >
                 <option value="" disabled>
                   Select second start time
@@ -193,7 +193,7 @@ const Availability: React.FC = () => {
               <select
                 value={availability[day].end2}
                 onChange={(e) => handleChange(day, "end2", e.target.value)}
-                className="border border-gray-300 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="border border-gray-300 dark:border-gray-600 rounded-lg p-2 w-1/2 focus:outline-none focus:ring-2 focus:ring-blue-500 dark:bg-gray-700 dark:text-gray-200"
               >
                 <option value="" disabled>
                   Select second end time

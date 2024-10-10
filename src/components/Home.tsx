@@ -1,15 +1,15 @@
 const Home: React.FC = () => {
   return (
     <>
-      <div className="bg-gradient-to-r py-8 px-10 text-center rounded-lg shadow-lg">
-        <h2 className="text-4xl md:text-5xl font-extrabold mb-4">
+      <div className="about-container p-6 bg-gray-100 dark:bg-gray-800 rounded-lg shadow-md">
+        <h2 className="text-4xl md:text-5xl font-extrabold mb-4 text-white dark:text-gray-100">
           ¡Clases de Español en Línea!
         </h2>
-        <p className="text-xl md:text-2xl mb-4">
+        <p className="text-xl md:text-2xl mb-4 text-gray-300 dark:text-gray-400">
           Descubre el Español con Alegría: Aprende con Amor en Nuestras
           Divertidas Clases por Video Llamada.
         </p>
-        <p className="text-xl md:text-2xl">
+        <p className="text-xl md:text-2xl text-gray-300 dark:text-gray-400">
           Conviértete en un Experto del Idioma con Nuestro Enfoque Cálido y
           Personalizado en Cada Llamada.
         </p>
@@ -22,8 +22,10 @@ const Home: React.FC = () => {
             alt="Ana"
             className="w-48 h-48 mx-auto rounded-full shadow-md"
           />
-          <h2 className="text-2xl font-bold mt-4">¡Hola! Soy Ana Laura</h2>
-          <p className="text-lg mt-2">
+          <h2 className="text-2xl font-bold mt-4 text-white dark:text-gray-100">
+            ¡Hola! Soy Ana Laura
+          </h2>
+          <p className="text-lg mt-2 text-gray-300 dark:text-gray-400">
             Profesora de español desde hace tres años. Me considero muy sociable
             y disfruto mucho el contacto con la gente, por eso me dedico a
             enseñar a hablar español.
@@ -35,10 +37,10 @@ const Home: React.FC = () => {
             alt="Arms"
             className="w-48 h-48 mx-auto rounded-full shadow-md"
           />
-          <h2 className="text-2xl font-bold mt-4">
+          <h2 className="text-2xl font-bold mt-4 text-white dark:text-gray-100">
             Es importante que conectemos
           </h2>
-          <p className="text-lg mt-2">
+          <p className="text-lg mt-2 text-gray-300 dark:text-gray-400">
             De verdad, ya que hablaremos mucho en las clases. Mi enfoque es
             ayudarte a expresar tu personalidad en español, y para eso, necesito
             que estés dispuesto(a) a hacerlo conmigo.
@@ -50,8 +52,10 @@ const Home: React.FC = () => {
             alt="Happy"
             className="w-48 h-48 mx-auto rounded-full shadow-md"
           />
-          <h2 className="text-2xl font-bold mt-4">No soy partidaria</h2>
-          <p className="text-lg mt-2">
+          <h2 className="text-2xl font-bold mt-4 text-white dark:text-gray-100">
+            No soy partidaria
+          </h2>
+          <p className="text-lg mt-2 text-gray-300 dark:text-gray-400">
             De tener muchos alumnos a la vez. Mi razón es simple: cada persona
             es única, al igual que sus objetivos. Si buscas un contenido
             genérico para todos, tal vez las academias de tu zona sean más
@@ -81,7 +85,7 @@ const Home: React.FC = () => {
         </div>
       </div>
 
-      <div className="p-6 text-gray-800 max-w-4xl mx-auto">
+      <div className="p-6 text-gray-300 dark:text-gray-400 max-w-4xl mx-auto">
         <p className="mb-4">
           Si deseas aprovechar al máximo tus viajes a España o Latinoamérica, o
           simplemente disfrutas aprender este maravilloso idioma en tu tiempo
