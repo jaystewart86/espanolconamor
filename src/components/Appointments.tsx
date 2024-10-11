@@ -17,19 +17,20 @@ const Appointments: React.FC = () => {
   const [appointments, setAppointments] = useState<Appointment[]>([]);
 
   const times = [
-    "8:00am",
-    "9:00am",
-    "10:00am",
-    "2:00pm",
-    "3:00pm",
-    "4:00pm",
-    "5:00pm",
+    "08:00",
+    "09:00",
+    "10:00",
+    "14:00",
+    "15:00",
+    "16:00",
+    "17:00",
   ];
 
   useEffect(() => {
     const fetchAppointments = async () => {
       try {
         const { data: appointments } = await client.models.Appointment.list();
+        console.log("Appointments:", appointments);
         const mappedAppointments = appointments.map((appointment) => ({
           date: appointment.date ?? "",
           time: appointment.time ?? "",
@@ -109,10 +110,14 @@ const Appointments: React.FC = () => {
   };
 
   const getAppointment = (date: string, time: string) => {
-    return appointments.find(
-      (appointment) => appointment.date === date && appointment.time === time
-    );
+    return appointments.find((appointment) => {
+      const isMatch = appointment.date === date && appointment.time === time;
+      console.log(`Checking appointment: ${appointment.date} === ${date} && ${appointment.time} === ${time} -> ${isMatch}`);
+      return isMatch;
+    });
   };
+
+  
 
   const days = getWeekDays(currentWeek);
   return (

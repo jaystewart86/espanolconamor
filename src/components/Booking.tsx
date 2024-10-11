@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { generateClient } from 'aws-amplify/data';
+import { generateClient } from "aws-amplify/data";
 import { Schema } from "../../amplify/data/resource";
 
 const client = generateClient<Schema>();
@@ -85,15 +85,15 @@ const Booking: React.FC = () => {
       const { errors } = await client.models.Appointment.create(appointment);
 
       if (errors) {
-      console.error(errors);
+        console.error(errors);
       } else {
-      alert("Appointment booked successfully!");
-      // Reset form fields
-      setWhatsapp("");
-      setEmail("");
-      setName("");
-      setSelectedDate("");
-      setSelectedTime("");
+        alert("Appointment booked successfully!");
+        // Reset form fields
+        setWhatsapp("");
+        setEmail("");
+        setName("");
+        setSelectedDate("");
+        setSelectedTime("");
       }
     } catch (error) {
       console.error(error);
