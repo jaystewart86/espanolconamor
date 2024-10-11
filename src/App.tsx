@@ -11,6 +11,7 @@ import Appointments from "./components/Appointments";
 import Contact from "./components/Contact";
 import Blog from "./components/Blog";
 import About from "./components/About";
+import Clients from "./components/Clients";
 
 function App() {
   return (
@@ -21,7 +22,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
-          <Route path="/booking" element={<Booking />} />
           <Route path="/contact" element={<Contact />} />
           <Route
             path="/terms-and-conditions"
@@ -30,8 +30,10 @@ function App() {
         </Routes>
         <Authenticator>
           <Routes>
+            <Route path="/booking" element={<Booking />} />
             <Route path="/availability" element={<Availability />} />
             <Route path="/appointments" element={<Appointments />} />
+            <Route path="/clients" element={<Clients />} />
           </Routes>
         </Authenticator>
         <Footer />
