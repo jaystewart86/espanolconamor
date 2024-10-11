@@ -4,7 +4,7 @@ import { listCognitoUsers } from "../services/cognitoService";
 interface CognitoUser {
   Username: string;
   UserStatus: string;
-  UserCreateDate: string;
+  UserCreateDate: Date;
   Attributes: { Name: string; Value: string }[];
 }
 const PractitionerAdminPanel = () => {
@@ -72,7 +72,7 @@ const PractitionerAdminPanel = () => {
                 {user.UserStatus}
               </td>
               <td className="py-2 px-4 border-b border-gray-200 dark:border-gray-700 text-sm text-gray-900 dark:text-white">
-                {new Date(user.UserCreateDate).toLocaleDateString()}
+                {user.UserCreateDate.toLocaleDateString()}
               </td>
               <td className="py-2 px-4 border-b border-gray-200 dark:border-gray-700 text-sm text-gray-900 dark:text-white">
                 {user.Attributes.find((attr) => attr.Name === "email")?.Value ||
