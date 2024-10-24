@@ -10,9 +10,9 @@ main:
   #   url: /collection-archive/
   # - title: "Sitemap"
   #   url: /sitemap/
-  - title: "Comprar una clase"
+  - title: "Reserve a class"
     url: /comprar-una-clase
-  - title: "Comprar un paquete"
+  - title: "Buy a packet"
     url: /comprar-un-paquete
   - title: "Terms & Conditions"
     url: /terms/

@@ -1,12 +1,12 @@
 ---
 layout: splash
-title: "Book a class"
-excerpt: "Book a class"
+title: "Reserve a class"
+excerpt: "Reserve a class"
 permalink: /comprar-una-clase
 toc: true
 ---
 
-## Book a class
+## Reserve a class
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
