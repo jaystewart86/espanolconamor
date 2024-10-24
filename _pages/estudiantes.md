@@ -1,14 +1,12 @@
 ---
 layout: splash
-excerpt: "Estudiantes."
+excerpt: "Students."
 permalink: /estudiantes
 ---
 
 ## Reserva una clase de tu paquete
 
-Esto es para estudiantes que han comprado un paquete. Reserva tus clases aquí.
-
-<b>Asegúrate de utilizar el mismo correo electrónico que ingresaste al comprar el paquete.</b>
+This is for students who have purchased a package. Book your classes here.
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>

@@ -1,13 +1,13 @@
 ---
 layout: splash
-title: "Comprar un paquete"
-excerpt: "Comprar un paquete."
+title: "Spanish classes packet"
+excerpt: "Spanish classes packet."
 permalink: /comprar-un-paquete
 ---
 
-## Comprar un paquete
+## Spanish classes packet
 
-Incluye 10 clases. Reserva la primera clase y paga el paquete. Reserva futuras clases aquí: <a href="https://espanolconamor.com/estudiantes">https://espanolconamor.com/estudiantes</a>.
+Includes 10 classes. Book your first class and pay for the package.  Book future classes here:  <a href="https://espanolconamor.com/estudiantes">https://espanolconamor.com/estudiantes</a>.
 
 <!-- Cal inline embed code begins -->
 <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline"></div>
